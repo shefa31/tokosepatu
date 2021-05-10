@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <RelativeLayout
+        android:id="@+id/layer1"
+        android:layout_width="250dp"
+        android:layout_height="194dp"
+        android:layout_gravity="center"
+        android:background="@drawable/elyo"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txlogin"/>
+
+        <EditText
+            android:id="@+id/edUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txlogin"
+            android:layout_toRightOf="@+id/txusername"/>
+
+        <TextView
+            android:id="@+id/txPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/txusername"/>
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/edUsername"
+            android:layout_toRightOf="@+id/txPassword"/>
+
+        <CheckBox
+            android:id="@+id/ckbRemember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember ID"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txPassword"/>
+
+        <TextView
+            android:id="@+id/txregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edPassword"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="14dp"
+            android:text="Sing Up / Register"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L O G I N"
+            android:layout_below="@+id/txPassword"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="150dp"
+            android:onClick="loginMasuk"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
